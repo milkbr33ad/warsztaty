@@ -18,24 +18,17 @@ async function handleSubmit(e) {
     <img src="/logo2.svg" alt="DFINITY logo" />
     <br />
     <br />
-    <form action="#" @submit="handleSubmit" class="flex flex-col gap-4 justify-center items-center">
-      <label for="name" class="text-2xl font-light">Enter your name: &nbsp;</label>
-      <input id="name" alt="Name" type="text" class =border-2 border-violet-600 rounded-lg"/>
-      <button type="submit" class="bg-gradient-to-r from-violet-800 to-violet-950 text-violet-50 p-2 rounded-lg">Click Me!</button>
+    <form action="#" @submit="handleSubmit">
+      <label for="name">Enter your name: &nbsp;</label>
+      <input id="name" alt="Name" type="text" />
+      <button type="submit">Click Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>
   </main>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Calculator from "./components/Calculator.vue";
-
 export default{
-  name: "App",
-  components: {
-    Header,
-    Calculator,
-  },
+    name:"Header",
 };
 </script>
